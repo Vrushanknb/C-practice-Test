@@ -1,6 +1,14 @@
 
+/*
+DAY 7
+1. WAP to store N integer values in an array (use malloc). Perform the following
+operations:
+i. Search an element using linear search
+ii. Find maximum and minimum value
+iii. Find the sum of all the elements of array
+iv. Find the sum of even and odd elements of array
+v. Check whether the array in palindrome
+vi. Write a function to deallocate the memory using free()
 
-int display_contents_of_a_file(char * file_name);
-int copy_contents_of_a_file(char * current_file, char * destination_file);
-int count_characters_in_file(char *file_name);
-int check_odd_or_even(char *file_name);
+*/
+int * store_integer_using_dynamic_allocation(int n);
