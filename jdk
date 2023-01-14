@@ -1,0 +1,90 @@
+//Calci menu driven
+
+package vrushank_221047007;
+
+ 
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Scanner;
+
+ 
+
+public class Impliment {
+
+    void add() throws IOException {
+        int a,b;
+        System.out.println("enter input");
+        Scanner sc = new Scanner(System.in);
+
+         a=sc.nextInt();
+         b=sc.nextInt();
+
+         int sum = a+b;
+          System.out.println(sum);
+
+          String str1=Integer.toString(sum);
+
+          FileReader file = new FileReader("db.properties");
+          Properties p=new Properties();
+          p.load(file);
+          String path=p.getProperty("path");
+         System.out.println(path);
+         FileWriter wri=new FileWriter(path,true);
+         wri.write(str1);
+          wri.close();
+          
+          //main 
+          
+          package vrushank_221047007;
+
+ 
+
+import java.io.IOException;
+import java.util.Scanner;
+
+ 
+
+public class Claci {
+
+    public static void main(String[] args) throws IOException
+    {
+
+        Impliment imp = new Impliment();
+
+        System.out.println("enter choice");
+
+        Scanner sc=new Scanner(System.in);
+         int n =sc.nextInt();
+
+         if(n==1)
+         {
+
+        imp.add();
+
+    }
+
+ 
+
+}
+}
+
+//db.propertiese
+
+path=summ.txt
+
+
+
+
+
+
+
+
+    }
+
+ 
+
+}
